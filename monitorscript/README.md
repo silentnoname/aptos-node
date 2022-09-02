@@ -14,13 +14,13 @@ Check the node running status,latest sync. If the sync stopped 2 mins, it will r
 ```
 cd <aptos testnet validator folder>
 wget https://raw.githubusercontent.com/silentnoname/aptos-node/main/monitorscript/validatormonitor.sh
-nohup bash validatormonitor.sh >>validator.log
+nohup bash validatormonitor.sh >>validator.log  &
 ```
 
 ```
 cd <aptos testnet full node folder>
 wget https://raw.githubusercontent.com/silentnoname/aptos-node/main/monitorscript/fullnodemonitor.sh
-nohup bash fullnodemonitor.sh >>fullnode.log
+nohup bash fullnodemonitor.sh >>fullnode.log &
 ```
 
 ## Check log
